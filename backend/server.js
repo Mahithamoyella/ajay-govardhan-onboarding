@@ -38,7 +38,7 @@ app.use('/uploads', express.static(uploadDir));
 // PostgreSQL Pool Configuration
 const pool = new Pool({
   user: process.env.DB_USER || 'postgres',
-  host: process.env.DB_HOST || 'postgres',
+  host: process.env.DB_HOST || 'postgres-db',
   database: process.env.DB_NAME || 'onboarding',
   password: process.env.DB_PASSWORD || 'admin834',
   port: process.env.DB_PORT || 5432,
